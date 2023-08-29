@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos2/style.css">
+    <link rel="stylesheet" href="../estilos2/media-query.css">
+
+</head>
+<body>
+    <main>
+        <section class="login">
+            <img src="../imagens/IMG_1498.JPEG" alt="" height="250px" width="250px">
+            <div class="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) ao clube do Juan. Faça login ou clique em cadastre-se para continuar.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="Username" required autocomplete="email">
+                        <label for="iemail"></label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-icons">key</span>
+                        <input type="password" name="senha" id="isenha" minlength="8" placeholder="Password" required autocomplete="current-password">
+                        <label for="isenha"></label>
+                    </div>
+                    <div class="bot">
+                        <input type="submit" value="Entrar" id="entrar">
+                        <a href="esqueci.html" id="esq">
+                            Esqueci a senha <i class="material-icons" id="icone">mail</i>
+                        </a>
+                        <a href="cadastre-se.html" id="cadastro">Cadastre-se</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

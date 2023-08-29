@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* paleta de cores:
+fundo.
+black: #0A0A0A
+cinza: #555555
+black: #363636
+
+caixa.
+#2E2E2E
+
+user e senha
+#141414
+
+entrar
+#909090
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body{
+    background-image: linear-gradient(to right bottom,#363636,#555555,#0A0A0A);
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+#login{
+    background-image: linear-gradient(#363636, #555555fd, #0a0a0a);
+    width: 250px;
+    height: 615px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    transition: width 0.1s, height 0.1s;
+    transition-timing-function: ease;
+    
+}
+#imagem{
+    display: block;
+    background: url(../imagens/IMG_1498.JPEG);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#formulario{
+    display: block;
+    padding: 0.5em;
+    
+}
+#formulario h1{
+    color: white;
+    font-weight: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario p{
+    color: white;
+    font-size: 0.8em;
+    text-align: justify;
+}
+.campo{
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 8px;
+}
+.campo input:focus-within{
+    background-color: white;
+}
+.campo span{
+    color: white;
+    background-color:black;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.campo input{
+    background-color: #141414aa;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+#entrar{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #909090;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#entrar:hover{
+    background-color: #777575;
+    color: white;
+}
+.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color:#5f5c5cc6;
+    border: none;
+    border: 1px solid #909090;
+    border-radius: 5px;
+}
+.botao:hover{
+    background-color:#909090;
+    color: black;
+}
+#icone {
+    font-size: 0.8em;
+}
+#cadastro{
+    color: black;
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    background-color: #909090;
+    padding: 7px;
+    height: 40px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.762);
+    border-radius: 5px;
+}
+#cadastro:hover{
+    background-color: #363636;
+    color: white;
+}
